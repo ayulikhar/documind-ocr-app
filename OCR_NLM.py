@@ -12,7 +12,7 @@ import numpy as np
 from transformers import pipeline
 import fitz
 from langdetect import detect
-import sentencepiece
+#import sentencepiece
 from PyPDF2 import PdfReader
 
 try:
@@ -77,7 +77,7 @@ def extract_keywords(text, top_n=10):
 # 💬 Load summarization model (this will download once & cache)
 summarizer = pipeline("summarization",model="facebook/bart-large-cnn")
 print(summarizer("Transformers are amazing tools for natural language processing tasks.")[0]['summary_text'])
-translator = pipeline("translation", model="Helsinki-NLP/opus-mt-ROMANCE-en")  # for FR→EN, ES→EN, IT→EN etc.
+#translator = pipeline("translation", model="Helsinki-NLP/opus-mt-ROMANCE-en")  # for FR→EN, ES→EN, IT→EN etc.
 
 # 📚 Generate summary from text
 
@@ -161,11 +161,11 @@ def documind_pipeline(image):
 
     #Translate summary if not in English
     translated_summary = None
-    if detected_lang != 'en':
-        try:
-            translated_summary = translator(summary_text, max_length=100)[0]['translation_text']
-        except Exception as e:
-            translated_summary = f"Translation error: {e}"
+    #if detected_lang != 'en':
+    #    try:
+    #        translated_summary = translator(summary_text, max_length=100)[0]['translation_text']
+    #    except Exception as e:
+    #        translated_summary = f"Translation error: {e}"
     
     return {
         'raw_text': raw_text,

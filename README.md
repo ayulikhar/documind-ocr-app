@@ -35,8 +35,10 @@ DocuMind is an intelligent OCR-based Streamlit app that reads scanned documents,
 ---
 
 ## 📸 Screenshots
+![Screenshot 2025-06-16 135346](https://github.com/user-attachments/assets/22d4c74a-1e43-47ee-88fc-8ae8c7abc687)
 
-(You can add screenshots of the app running here — I can help you make clean ones too!)
+![image](https://github.com/user-attachments/assets/a9df50b4-4ab6-43c1-8b79-bc90bea0f255)
+
 
 ---
 
